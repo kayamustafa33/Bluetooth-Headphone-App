@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btButton"
+        android:onClick="openBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Aç/Kapat"
+        android:textAllCaps="false"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFC107"/>
+
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="upVoice"
+        android:text="+"
+        tools:layout_editor_absoluteX="162dp" />
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="downVoice"
+        android:text="-"
+        tools:layout_editor_absoluteX="162dp" />
+
+    <Button
+        android:onClick="resumeMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devam Et"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:onClick="stopMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durdur"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <Button
+        android:onClick="bassClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Baslı Ses"/>
+    <Button
+        android:onClick="bassCloseClicked"
+        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:text="Bassız Ses"/>
+
+</LinearLayout>
